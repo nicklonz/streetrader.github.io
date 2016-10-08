@@ -1,14 +1,18 @@
 
 ## CHALLENGES AND SOLUTIONS
 
-* forEach Challenge - [Starter](https://repl.it/CaSA/20)
-* forEach Challenge - Solution
+### Class05
 
-* CountItems Challenge - [Starter](https://repl.it/DoDZ/15)
-* CountItems Challenge - Solution
+* forEach Challenge - [Starter](https://repl.it/CaSA/41)
+* forEach Challenge - [Solution](https://repl.it/DoPj/3)
 
-* Conditional Statements & Loops - LAB2 [Starter](https://repl.it/Dmvx/19)
-* Conditional Statements & Loops - LAB2 Solution
+* Loops - LAB2 [Starter](https://repl.it/DoqM/3)
+* Loops - LAB2 [Solution](https://repl.it/DoSr/12)
 
-* Functions LAB1 - [Starter](https://repl.it/DnxF/18)
-* Functions LAB1 - Solution
+* Functions LAB1 - [Starter](https://repl.it/Doqt/2)
+* Functions LAB1 - [Solution](https://repl.it/DoSR/1)
+
+### Class06
+
+* Warmup - [Starter](https://repl.it/DoyY/12)
+* Warmup - [Solution](https://repl.it/DosL/77)
