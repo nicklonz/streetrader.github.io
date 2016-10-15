@@ -12,7 +12,9 @@ called `flickerObj`
 /*
 2. Iterate (this means 'use a loop') and do a console.log of each of the item titles
 with the date the photo was taken. The first console.log should return the following:
+
 "What a surprise in lyon. 2016-02-23T06:47:30-08:00"
+
 */
 
 /*
