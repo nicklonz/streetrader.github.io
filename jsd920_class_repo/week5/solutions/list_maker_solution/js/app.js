@@ -13,43 +13,42 @@
 
 
 // similar to window.onload
-// 
-// 
 $(document).ready(function () {
-
-  // jQuery submit
-  $('#item-form').submit(function (event) {
-    event.preventDefault();
-
-    // get DOM input
-    var input = $('#new-item').val().trim();
-
-    if (input === "") {
-      return alert('no input!');
-    } else {
-      // append new <li>
-      $('#list').append('<li>' + input + '</li>');
-
-      // clear input
-      $('#new-item')
-        .val('')
-        .focus();
-    }
-  })
-
-  // $('li').click(function () {
-  //  $(this).remove();
-  // });
-
-  // remove <li> on click
-  $(document).on('click', 'li', function () {
-    $(this).remove();
-  });
+    //grab to ul 
+	  var list = $('#list')
+    //grab the input field
+    var input = $('#new-item')
+    //add 'archive' to existing li's
+    prepend($('li'))
+    //add click event to button
+    $('#clickme').click(function(event){
+      //prevents default behaviour of form
+      event.preventDefault() 
+      //confirm there is something in the input when submitted
+      if(input.val() == "") {alert("type something")}
+      else { 
+        //create a new li with the input value
+        var item = $('<li>').html(input.val()) 
+        //prepend 'archive' to the new li
+        prepend(item)
+        //append the li to the ul
+        list.append(item)
+        //reset the focus of the input..this puts a blue border around input
+        input.val("").focus()
+      }//else
+    })//click event
+})//ready event
 
 
+//add event listener on ul so it's aware of newly added children
+$("ul").on('click',".archive",function(){
+  $(this).parent().remove() //$(this) will be the span and .parent() the li
 })
-
-
+//prepend function will add 'archive' to li
+function prepend(lis){
+  var archive = $("<span>").html("archive - ").addClass("archive")
+  $(lis).prepend(archive)
+}
 
 
 
