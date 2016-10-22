@@ -5,8 +5,7 @@ Project Description
 The project will focus on utilizing API data from MLB teams in order to construct practical metrics for valid statistical analysis.
 
 https://en.wikipedia.org/wiki/Pythagorean_expectation
-http://www.baseballprospectus.com/standings/
-
+http://www.baseballprospectus.com/standings
 
 Functional Components
 
@@ -20,7 +19,9 @@ Create ancillary funtionality.
 
 Helper Functions
 
-TBD Use this section to document all helper functions. These functions should be versatile enough to be reused in other projects
+TBD Use this section to document all helper functions. These functions should be versatile enough to be reused in other projects.
+
+https://repl.it/ECRT/14
 
 Additional Libraries
 
