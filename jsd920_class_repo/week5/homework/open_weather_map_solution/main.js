@@ -36,7 +36,7 @@ Open Weather Map Instructions:
 $(document).ready(function () {
   var apiKey = 'd5f81af7e565653bdaca9a5f863d08a0'
 
-  // var apiKey = '19ab861f15cfd2e8216a3be1ed615598';
+  // var apiKey = 
   var weatherUrl = 'http://api.openweathermap.org/data/2.5/weather?appid=' + apiKey + '&units=imperial&q=';
 
   // Problem 1
@@ -57,9 +57,7 @@ $(document).ready(function () {
       .append('<p>Wind Speed: ' + windSpeed + '</p>')
 
     })
-    // .fail(function (xhr) {
-    //  console.log(xhr);
-    // });
+    
 
     // Problem 2
     $('#weather-form').submit(function (event) {
@@ -117,7 +115,7 @@ $(document).ready(function () {
 
     // Bonus - change background color based on temperature
     function colorBackground (temp) {
-      if (temp > 70) {
+      if (temp > 75) {
         $('body').css('background', 'red');
       } else {
         $('body').css('background', 'blue');
