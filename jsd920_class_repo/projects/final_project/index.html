@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MLB Pythagorean Team Calculator</title>
+		<link rel="icon" href="images/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rubik">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<center>
+					<div id="wrapper">
+					<h2>MLB Pythagorean Team Calculator</h2>
+
+		<h2>
+		<div id="hbtitle"></div>
+
+		<a href="https://en.wikipedia.org/wiki/Pythagorean_expectation" target="blank">What does this site do?</a>
+		<br>
+		
+				<div><b>Select Team:</b></div>
+		</h2>
+		<div id="handlebars-list"></div>
+
+		<script id="title-template" type="text/x-handlebars-template">
+    		<h4>{{title}}</h4>
+    		<p>{{description}}</p>
+  		</script>
+
+	 	<script id="president-template" type="text/x-handlebars-template">
+			<select>
+				{{#each presidents}}
+					<option>{{this}}</option>
+				{{/each}}
+			</select>
+		</script>
+			
+		<form>
+      <button>Calculate</button>
+    </form>
+
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+		<script src="handlebars.js"></script>
+		<script src="app.js"></script>
+
+		</center>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/handlebars.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>
+

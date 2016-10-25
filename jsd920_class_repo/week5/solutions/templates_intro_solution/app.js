@@ -47,7 +47,6 @@ var presidentObject = {
     ]
 }
 
-
 var list = $('#jquery-list')
 presidentObject.presidents.forEach(function(d){
     var option = $("<option>").html(d)
