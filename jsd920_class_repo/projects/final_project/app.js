@@ -1,5 +1,5 @@
-var presidentObject = {
-    presidents: [
+var teamObject = {
+    teams: [
                 'Boston Red Sox', 
                 'Arizona Diamondbacks',
                 'Atlanta Braves',
@@ -35,7 +35,7 @@ var presidentObject = {
 
 
 var list = $('#jquery-list')
-presidentObject.presidents.forEach(function(d){
+teamObject.teams.forEach(function(d){
     var option = $("<option>").html(d)
     list.append(option)
 })
@@ -51,10 +51,10 @@ var addTitleObj = compileTitle(titleObj)
 var hbTitleHtml = $('#hbtitle').append(addTitleObj)
 
 //1. grab handblebars template
-var presTemplate = $("#president-template").html()
+var teamTemplate = $("#team-template").html()
 //2. complie template
-var compileTemp = Handlebars.compile(presTemplate)
+var compileTemp = Handlebars.compile(teamTemplate)
 //3. add objs
-var addObjs = compileTemp(presidentObject)
+var addObjs = compileTemp(teamObject)
 //4. append 
 var hbList = $('#handlebars-list').append(addObjs)
