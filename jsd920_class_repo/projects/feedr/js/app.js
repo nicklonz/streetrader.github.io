@@ -152,6 +152,7 @@ var Feedr = {
   },
 
   // Displays all articles when Feedr logo is clicked
+  // See Line 21 index.html
   showAllArticles : function() {
     $('#feedr').on('click', function(){
       $('.article').show();
@@ -191,7 +192,7 @@ var Feedr = {
   openPopUp : function(title, source) {
     $("#popUp").removeClass("hidden loader");
     var contents = Feedr.findByProperty(title, source);
-    // populate tamplate with article content
+    // populate template with article content
     var linkContents = {  articleLink: contents[1],
                           articleTitle: title,
                           articleDescription: contents[0]
