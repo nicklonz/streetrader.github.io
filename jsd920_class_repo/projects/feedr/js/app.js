@@ -168,14 +168,14 @@ var Feedr = {
     $('img[src="nsfw"]').attr("src", r);
   },
 
-  // get sources
-  // heroku proxy required for CORS issue. Jquery proxy required to reset context from window to Feedr.
+  // Get sources
+  // Heroku proxy required for CORS issue. Jquery proxy required to reset context from window to Feedr.
   getSourceMashable : function() {
     $.get('https://accesscontrolalloworiginall.herokuapp.com/http://mashable.com/stories.json', $.proxy(Feedr.responseMashable, Feedr))
         .done(function(){ console.log( "loaded Mashable"); })
         .fail(function() { alert( "error, failed to load Mashable" ); });
   },
-
+  // Heroku proxy not necessary for Reddit 
   getSourceReddit : function() {
     $.get('https://www.reddit.com/top.json', $.proxy(Feedr.responseReddit, Feedr))
         .done(function(){ console.log( "loaded Reddit"); })
