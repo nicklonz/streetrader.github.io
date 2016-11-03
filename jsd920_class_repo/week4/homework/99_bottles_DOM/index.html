@@ -2,10 +2,48 @@
 <html>
 <center>
 <head>
-  <title>99 Bottles of Beer on the Wall</title>
+  <title>Bottles of Beer on the Wall</title>
 </head>
 <body>
-  <h1>Welcome to the 99 Bottles of Beer Sing Along</h1>
+  <h1>Welcome to the Bottles of Beer Sing Along</h1>
+  <h2>Enter Number of Bottles for the Countdown:</h2>
+  <label for="bottles"></label>
+  <input value="162" name="bottles" type="integer" id="bottles" placeholder="Number of Bottles">
+    <select id="team">
+          <option>Boston Red Sox</option>
+          <option>Arizona Diamondbacks</option>
+          <option>Atlanta Braves</option>
+          <option>Baltimore Orioles</option>
+          <option>Chicago Cubs</option>
+          <option>Chicago White Sox</option>
+          <option>Cincinnati Reds</option>
+          <option>Cleveland Indians</option>
+          <option>Colorado Rockies</option>
+          <option>Detroit Tigers</option>
+          <option>Florida Marlins</option>
+          <option>Houston Astros</option>
+          <option>Kansas City Royals</option>
+          <option>Los Angeles Angels</option>
+          <option>Los Angeles Dodgers</option>
+          <option>Milwaukee Brewers</option>
+          <option>Minnesota Twins</option>
+          <option>New York Mets</option>
+          <option>New York Yankees</option>
+          <option>Oakland Athletics</option>
+          <option>Philadelphia Phillies</option>
+          <option>Pittsburgh Pirates</option>
+          <option>San Diego Padres</option>
+          <option>San Francisco Giants</option>
+          <option>Seattle Mariners</option>
+          <option>St. Louis Cardinals</option>
+          <option>Tampa Bay Rays</option>
+          <option>Texas Rangers</option>
+          <option>Toronto Blue Jays</option>
+          <option>Washington Nationals</option>
+      </select>
+
+  <button id="btn">Go!</button>
+
   <div id="count"></div>
 </center>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
