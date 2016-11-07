@@ -8,8 +8,9 @@
   <h1>Welcome to the Bottles of Beer Sing Along</h1>
   <h2>Enter Number of Bottles for the Countdown:</h2>
   <label for="bottles"></label>
-  <input value="162" name="bottles" type="integer" id="bottles" placeholder="Number of Bottles">
+  <input value="99" name="bottles" type="integer" id="bottles" placeholder="Number of Bottles">
     <select id="team">
+          <option>Test Template</option>
           <option>Boston Red Sox</option>
           <option>Arizona Diamondbacks</option>
           <option>Atlanta Braves</option>
@@ -42,7 +43,10 @@
           <option>Washington Nationals</option>
       </select>
 
-  <button id="btn">Go!</button>
+      <p>The number of bottles selected is <span id=num_bottles>0</span>.</p>
+      <p>The team selected is <span id=name_team>0</span>.</p>
+
+  <button id="btn">Countdown!</button>
 
   <div id="count"></div>
 </center>

@@ -29,11 +29,11 @@ ul li {
 }
 
 input {
-  width: 400px;
+  width: 40px;
   font-family: monospace;
   font-size: 20px;
-  margin: 20px 0;
-  border: 1px solid #9CE6C1;
+  margin: 10px 0;
+  border: 5px solid #FF0000;
   box-shadow: none;
   padding: 10px;
 }
@@ -43,7 +43,7 @@ button {
   font-family: monospace;
   font-size: 20px;
   margin: 20px 0;
-  border: 1px solid #9CE6C1;
+  border: 10px solid #FF0000;
   box-shadow: none;
   padding: 10px;
 }
