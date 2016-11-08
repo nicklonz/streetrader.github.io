@@ -14,11 +14,10 @@ var numberofWins = prompt("Enter number of wins: ");
 var runsScored = prompt("Enter the total number of runs scored: ");
 var runsAllowed = prompt("Enter the total number of runs allowed: ");
 
-*/
-
     var team = $('select#team').val(); 
 
     console.log('The team choosen is ',team)
+    */
 
     var numberofLosses = gamesPlayed - numberofWins
     var winPct = (numberofWins / gamesPlayed).toFixed(3)
@@ -34,14 +33,14 @@ var runsAllowed = prompt("Enter the total number of runs allowed: ");
 
     var nameOfTeam = $('input#team').val();
     $('span#name_team').text(nameOfTeam);
-    var numberOfBottles = $('input#bottles').val();
-    $('span#num_bottles').text(numberOfBottles);
-    var numberOfBottles = $('input#bottles').val();
-    $('span#num_bottles').text(numberOfBottles);
-    var numberOfBottles = $('input#bottles').val();
-    $('span#num_bottles').text(numberOfBottles);
-    var numberOfBottles = $('input#bottles').val();
-    $('span#num_bottles').text(numberOfBottles);
+    var numberOfGames = $('input#games').val();
+    $('span#num_games').text(numberOfGames);
+    var numberOfWins = $('input#wins').val();
+    $('span#num_wins').text(numberOfWins);
+    var numberOfRunsScored = $('input#runs_scored').val();
+    $('span#num_runs_scored').text(numberOfRunsScored);
+     var numberOfRunsAgainst = $('input#runs_against').val();
+    $('span#num_runs_against').text(numberOfRunsAgainst);
 
         console.log("The " + teamName + " have played " + gamesPlayed + " games.");
         console.log("")
