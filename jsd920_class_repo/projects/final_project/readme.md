@@ -4,13 +4,11 @@
 
 Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality
 
-## Functional Components
-
 This is a breakdown of the top level functionality for final project
 
-* Functional component 1
-* Functional component 2
-* Functional component 3
+| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+|  MLB Pythgorean Formula| H | 1hrs| 2hrs |  |
 
 ## Helper Functions
 Use this section to document all helper functions. These functions should be versatile enough to be reused in other projects
