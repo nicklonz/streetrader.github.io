@@ -124,7 +124,7 @@ $(document).ready(function () {
 
   $('#clickme').click(function(event){
     event.preventDefault();
-      var apiKey = '963e108b3e21fb75d02fc3f49a345f13';
+      var apiKey = 'd5f81af7e565653bdaca9a5f863d08a0';
       var newCity = $('#city').val();
       var newState = $('#state').val();
       var newWeatherUrl = 'http://api.openweathermap.org/data/2.5/weather?q='+newCity+','+newState+'&units=imperial&appid=' + apiKey;

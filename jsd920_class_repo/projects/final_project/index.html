@@ -9,6 +9,8 @@
 	<body>
 		<center>
 					<div id="wrapper">
+  <hr>
+
 					<h2>MLB Pythagorean Team Calculator</h2>
 
 		<a href="https://en.wikipedia.org/wiki/Pythagorean_expectation" target="blank">What does this site do?</a>
@@ -47,6 +49,29 @@
           <option>Washington Nationals</option>
       </select>
 			<br>
+
+			
+  <div>
+    <form id="weather-form">
+      <h3>MLB Weather</h3>
+      <label for="city">City</label>
+      <input name="city" type="text" id="city" placeholder="City">
+      <label for="state">State</label>
+      <input name="state" type="text" id="state" placeholder="State">
+    </form>
+
+  <script id="weather-template" type="text/x-handlebars-template">
+    <p>City: {{city}}</p>
+    <p>Temperature: {{temp}}</p>
+    <p>Humidity: {{humidity}}</p>
+    <p>Wind Speed: {{windSpeed}}</p>
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="handlebars.js"></script>
+    <script src="main.js" type="text/javascript" charset="utf-8" async defer></script>
+
+
 			<div><b>Games Played:</b></div>
   <label for="games"></label>
   <input value="162" name="games" type="integer" id="games" placeholder="Games Played">

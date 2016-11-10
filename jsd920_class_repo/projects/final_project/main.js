@@ -1,3 +1,61 @@
+$(document).ready(function () {
+  var apiKey = 'd5f81af7e565653bdaca9a5f863d08a0';
+  var weatherUrl = 'http://api.openweathermap.org/data/2.5/weather?appid=' + apiKey + '&units=imperial&q=';
+
+  $.get(weatherUrl + 'New York City')
+    .fail(function (xhr) {
+      console.log(xhr);
+    })
+    .done(function (response) {
+        console.log(response);
+
+        var temp = response.main.temp;
+        var humidity = response.main.humidity;
+        var windSpeed = response.wind.speed;
+
+        $('#nyc-weather')
+            .append('<p>Temperature: ' + temp + '</p>')
+            .append('<p>Humidity: ' + humidity + '</p>')
+            .append('<p>Wind Speed: ' + windSpeed + '</p>')
+
+    })
+   
+    $('#weather-form').submit(function (event) {
+        event.preventDefault();
+
+        // get user input
+        var city = $('#city').val();
+        var state = $('#state').val();
+
+        $.ajax({
+            url: weatherUrl + city + ',' + state,
+            type: 'GET',
+            success: function (response) {
+                // pipe AJAX reponse to outside function for cleaner code
+                outputWeather(response);
+            },
+            error: function (xhr) {
+                console.log(xhr);
+            }
+        });
+    })
+
+    function outputWeather (response) {
+        console.log(response);
+
+        var city = response.name;
+        var temp = response.main.temp;
+        var humidity = response.main.humidity;
+        var windSpeed = response.wind.speed;
+
+        $('#weather-output')
+            .empty() // be sure to clear out any data from previous searches!
+            .append('<p>City: ' + city + '</p>')
+            .append('<p>Temperature: ' + temp + '</p>')
+            .append('<p>Humidity: ' + humidity + '</p>')
+            .append('<p>Wind Speed: ' + windSpeed + '</p>')
+    }
+
 /* MLB Pythagorean Expectation
 
 Enter Team Name
@@ -20,7 +78,8 @@ var runsAllowed = prompt("Enter the total number of runs allowed: ");
     */
 
     var numberofLosses = gamesPlayed - numberofWins
-    var winPct = (numberofWins / gamesPlayed).toFixed(3)
+    var winPct
+     = (numberofWins / gamesPlayed).toFixed(3)
     var scoredAvg =  (runsScored / gamesPlayed).toFixed(2)
     var allowedAvg = (runsAllowed / gamesPlayed).toFixed(2)
     var scoredAllowedAvg = (scoredAvg - allowedAvg).toFixed(2)

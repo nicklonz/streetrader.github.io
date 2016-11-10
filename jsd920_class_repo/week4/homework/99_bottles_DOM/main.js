@@ -9,8 +9,7 @@ window.onload=function() {
     var numberOfBottles = $('input#bottles').val();
     $('span#num_bottles').text(numberOfBottles);
 
-    var nameOfTeam = $('input#team').val();
-    $('span#name_team').text(nameOfTeam);
+    $('span#name_team').text(team);
 
     while (bottles > 0) {
       if (bottles==1) bottle="bottle"; 
