@@ -1,3 +1,33 @@
+$(document).ready(function() {
+  // store .container to a variable 
+  var $container = $('.container');
+  // set inital value
+  var noteCount = 1;
+
+  $('.box-creator-button').click(function() {
+    // we need to create new box each click
+    
+    var $stickyNote = $('<div></div>').addClass('box') ;
+
+    // capture and store user input
+    var stickMessage = $('.box-color-note').val();
+    var stickyColor = $('.box-color-input').val();
+
+
+    $stickyNote.css({backgroundColor: stickyColor});
+    $stickyNote.html(noteCount++ + '. ' + stickMessage);
+    $container.append($stickyNote);
+
+   // clear out the inputs
+    $('.box-color-input').val('');
+    $('.box-color-note').val('');
+  })
+
+  $container.on('click', '.box', function () {
+    $(this).remove();
+  })
+})
+
 /*
 
 	Closures Exercise: Sticky Notes
@@ -7,6 +37,7 @@
 
 	Instructions:
 	Note: The CSS is all setup for you (don't edit the style.css file). You will need to work on the index.html and app.js files.
+`
 
 	HTML
 	- Create input and button elements - maybe use a form :)
