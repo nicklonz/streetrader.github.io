@@ -1,8 +1,8 @@
- var config = {
-    apiKey: "AIzaSyAAP8FKtkbxXNrG4kgZUtiJnfVFB7tGPuM",
-    authDomain: "jsd-forum-app-f82ae.firebaseapp.com",
-    databaseURL: "https://jsd-forum-app-f82ae.firebaseio.com",
-    storageBucket: "jsd-forum-app-f82ae.appspot.com",
-    messagingSenderId: "533164382209"
+  var config = {
+    apiKey: "AIzaSyBohvyxwX7m1d5ZKnJljrF7fGHjCmXWT7E",
+    authDomain: "jsd-forum-a7b0f.firebaseapp.com",
+    databaseURL: "https://jsd-forum-a7b0f.firebaseio.com",
+    storageBucket: "jsd-forum-a7b0f.appspot.com",
+    messagingSenderId: "924034822872"
   };
   firebase.initializeApp(config);
