@@ -50,7 +50,7 @@
       </select>
 			<br>
 
-			
+	<!--	
   <div>
     <form id="weather-form">
       <h3>MLB Weather</h3>
@@ -66,6 +66,7 @@
     <p>Humidity: {{humidity}}</p>
     <p>Wind Speed: {{windSpeed}}</p>
   </script>
+  -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="handlebars.js"></script>
@@ -78,29 +79,39 @@
   
   <div><b>Total Wins:</b></div>
   <label for="wins"></label>
-  <input value="40" name="wins" type="integer" id="wins" placeholder="Wins">
+  <input value="87" name="wins" type="integer" id="wins" placeholder="Wins">
   
   <div><b>Runs Scorded:</b></div>
   <label for="scorded"></label>
-  <input value="60" name="scorded" type="integer" id="scorded" placeholder="Runs Scorded">
+  <input value="671" name="scorded" type="integer" id="scorded" placeholder="Runs Scorded">
   
   <div><b>Runs Against:</b></div>
   <label for="against"></label>
-  <input value="40" name="against" type="integer" id="against" placeholder="Runs Against">
+  <input value="617" name="against" type="integer" id="against" placeholder="Runs Against">
   <br>
   <button id="btn">Calculate</button>
 
-  <p>Team: <span id=name_team>0</span>.</p>
-  <p>Games Played: <span id=games_played>0</span>.</p>
+  <p>The team in the <span id=name_team></span> has played <span id=games_played></span> </p>
+  <p>Games Played: .</p>
   <p>Total Wins: <span id=total_wins>0</span>.</p>
   <p>Total Runs Scored: <span id=runs_scored>0</span>.</p>
   <p>Total Runs Against: <span id=runs_against>0</span>.</p>
+
+    
+ <!--    "They have won " +numberofWins + " and lost " + numberofLosses + " games for a win pct of " + winPct + "" 
+    
+    "They have scored " + runsScored + " runs and allowed " + runsAllowed + " for a differential of " + runsSAdiff + " total runs."
+    "They have scored on average " + scoredAvg + " runs while allowing " + allowedAvg + " for a differential of " + scoredAllowedAvg + " runs per game.
+    "Their PYG Expectation for wins is " + pygExpec + " games.")
+    "The PYG Expectation minus actual wins difference is " + pygExpecDiff + " games.")</p> -->
 				
 		</center>
 
-		<script src="js/jquery.min.js"></script>
-		<script src="js/handlebars.js"></script>
+	<!-- 	<script src="js/jquery.min.js"></script> -->
+		<!-- <script src="js/handlebars.js"></script> -->
 		<script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 	</body>
 </html>
 

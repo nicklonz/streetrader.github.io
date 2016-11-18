@@ -101,17 +101,17 @@ var runsAllowed = prompt("Enter the total number of runs allowed: ");
      var numberOfRunsAgainst = $('input#runs_against').val();
     $('span#num_runs_against').text(numberOfRunsAgainst);
 
-        console.log("The " + teamName + " have played " + gamesPlayed + " games.");
-        console.log("")
-        console.log("They have won " +numberofWins + " and lost " + numberofLosses + " games for a win pct of " + winPct + "" )
-        console.log("")
-        console.log("They have scored " + runsScored + " runs and allowed " + runsAllowed + " for a differential of " + runsSAdiff + " total runs.");
-        console.log("");
-        console.log("They have scored on average " + scoredAvg + " runs while allowing " + allowedAvg + " for a differential of " + scoredAllowedAvg + " runs per game.")
-        console.log("")
-        console.log("Their PYG Expectation for wins is " + pygExpec + " games.")
-        console.log("")
-        console.log("The PYG Expectation minus actual wins difference is " + pygExpecDiff + " games.")
+        // console.log("The " + teamName + " have played " + gamesPlayed + " games.");
+        // console.log("")
+        // console.log("They have won " +numberofWins + " and lost " + numberofLosses + " games for a win pct of " + winPct + "" )
+        // console.log("")
+        // console.log("They have scored " + runsScored + " runs and allowed " + runsAllowed + " for a differential of " + runsSAdiff + " total runs.");
+        // console.log("");
+        // console.log("They have scored on average " + scoredAvg + " runs while allowing " + allowedAvg + " for a differential of " + scoredAllowedAvg + " runs per game.")
+        // console.log("")
+        // console.log("Their PYG Expectation for wins is " + pygExpec + " games.")
+        // console.log("")
+        // console.log("The PYG Expectation minus actual wins difference is " + pygExpecDiff + " games.")
 
 
 /*
