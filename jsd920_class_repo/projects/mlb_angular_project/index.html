@@ -1,50 +1,97 @@
 <!DOCTYPE html>
-
 <!-- define angular app -->
 <html ng-app="scotchApp">
+   <head>
+      <title>MLB Pythagorean Team Calculator</title>
+      <link rel="icon" href="images/favicon.ico" />
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- SCROLLS -->
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+      <!-- SPELLS -->
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+      <script src="script.js"></script>
+   </head>
+   <!-- define angular controller -->
+   <body ng-controller="mainController">
+      <nav class="navbar navbar-default">
+         <div class="container">
+            <div class="navbar-header">
+               <a class="navbar-brand" href="/">{{games_played}} MLB Pythagorean Team Calculator</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+               <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+               <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
+               <li><a href="#data"><i class="fa fa-shield"></i> Data</a></li>
+               <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+            </ul>
+         </div>
+      </nav>
+      <div id="main">
+         <!-- angular templating -->
+         <!-- this is where content will be injected -->
+         <div class="container">
+            <div class="jumbotron text-center">
+               <h3><a href="https://en.wikipedia.org/wiki/Pythagorean_expectation" target="blank">What is the Pythagorean Expectation?</a></h3>
 
-<head>
-  <title>MLB Pythagorean Team Calculator</title>
-  <link rel="icon" href="images/favicon.ico" />
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!-- SCROLLS -->
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
-
-  <!-- SPELLS -->
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
-  <script src="script.js"></script>
-</head>
-
-<!-- define angular controller -->
-<body ng-controller="mainController">
-  <nav class="navbar navbar-default">
-    <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="/">MLB Pythagorean Team Calculator</a>
+               <div><b>Select Team:</b></div>
+               <select id="team" ng-model="team">
+                  <option>New York Mets</option>
+                  <option>Boston Red Sox</option>
+                  <option>Arizona Diamondbacks</option>
+                  <option>Atlanta Braves</option>
+                  <option>Baltimore Orioles</option>
+                  <option>Chicago Cubs</option>
+                  <option>Chicago White Sox</option>
+                  <option>Cincinnati Reds</option>
+                  <option>Cleveland Indians</option>
+                  <option>Colorado Rockies</option>
+                  <option>Detroit Tigers</option>
+                  <option>Florida Marlins</option>
+                  <option>Houston Astros</option>
+                  <option>Kansas City Royals</option>
+                  <option>Los Angeles Angels</option>
+                  <option>Los Angeles Dodgers</option>
+                  <option>Milwaukee Brewers</option>
+                  <option>Minnesota Twins</option>
+                  <option>New York Mets</option>
+                  <option>New York Yankees</option>
+                  <option>Oakland Athletics</option>
+                  <option>Philadelphia Phillies</option>
+                  <option>Pittsburgh Pirates</option>
+                  <option>San Diego Padres</option>
+                  <option>San Francisco Giants</option>
+                  <option>Seattle Mariners</option>
+                  <option>St. Louis Cardinals</option>
+                  <option>Tampa Bay Rays</option>
+                  <option>Texas Rangers</option>
+                  <option>Toronto Blue Jays</option>
+                  <option>Washington Nationals</option>
+               </select>
+               <br>
+               <div><b>Games Played:</b></div>
+               <label for="games"></label>
+               <input value="" ng-model="games_played" name="games" type="integer" id="games" placeholder="Games Played">
+               <div><b>Total Wins:</b></div>
+               <label for="wins"></label>
+               <input value="87" name="wins" ng-model="games_won"  type="integer" id="wins" placeholder="Wins">
+               <div><b>Runs Scorded:</b></div>
+               <label for="scorded"></label>
+               <input value="671" name="scorded" ng-model="runs_scored" type="integer" id="scorded" placeholder="Runs Scorded">
+               <div><b>Runs Against:</b></div>
+               <label for="against"></label>
+               <input value="617" name="against" ng-model="runs_against" type="integer" id="against" placeholder="Runs Against">
+               <br><br>
+               <br><br>
+               <section id="results">
+                  <p>The team selected is <span ng-model="team"></span>.</p>
+                  <p>Games played is <span ng-model="games_played"></span></p>
+               </section>
+            </div>
+         </div>
       </div>
-
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-        <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
-        <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <div id="main">
-  
-    <!-- angular templating -->
-		<!-- this is where content will be injected -->
-    <div ng-view></div>
-    
-  </div>
-  
-  <footer class="text-center">
-  
-  </footer>
-  
-</body>
-
+      <footer class="text-center">
+      </footer>
+   </body>
 </html>
