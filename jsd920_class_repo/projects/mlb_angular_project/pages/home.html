@@ -1,3 +1,4 @@
+<div class="container">
 <div class="jumbotron text-center">
 	<h3><a href="https://en.wikipedia.org/wiki/Pythagorean_expectation" target="blank">What is the Pythagorean Expectation?</a></h3>
 
@@ -35,9 +36,26 @@
           <option>Washington Nationals</option>
       </select>
       <br>
-        <form id="item-form">
-        <button id="clickme">Calculate Expectation</button>
-      </form>
+
+        
+      <div><b>Games Played:</b></div>
+  <label for="games"></label>
+  <input value="162" name="games" type="integer" id="games" placeholder="Games Played">
+  
+  <div><b>Total Wins:</b></div>
+  <label for="wins"></label>
+  <input value="87" name="wins" type="integer" id="wins" placeholder="Wins">
+  
+  <div><b>Runs Scorded:</b></div>
+  <label for="scorded"></label>
+  <input value="671" name="scorded" type="integer" id="scorded" placeholder="Runs Scorded">
+  
+  <div><b>Runs Against:</b></div>
+  <label for="against"></label>
+  <input value="617" name="against" type="integer" id="against" placeholder="Runs Against">
+  <br>
+  <br>
+  <button id="clickme">Calculate Expectation</button>
 
 	<p>{{ message }}</p>
 </div>
