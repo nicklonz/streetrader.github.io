@@ -1,9 +1,3 @@
-	function TodoCtrl($scope) {
- 
-    $scope.total = function(){
-        return $scope.one * $scope.two;
-    };
-}
 
 	// create the module and name it scotchApp
 	var scotchApp = angular.module('scotchApp', ['ngRoute']);
@@ -30,6 +24,12 @@
 				controller  : 'dataController'
 			})
 
+			// route for the weather page
+			.when('/weather', {
+				templateUrl : 'pages/weather.html',
+				controller  : 'weatherController'
+			})
+
 			// route for the contact page
 			.when('/contact', {
 				templateUrl : 'pages/contact.html',
@@ -41,7 +41,6 @@
 	scotchApp.controller('mainController', function($scope) {
 		// create a message to display in our view
 		$scope.message = 'Thank You for visiting!';
-		$scope.games_played = '162';
 	});
 
 	scotchApp.controller('aboutController', function($scope) {
@@ -50,6 +49,10 @@
 
 	scotchApp.controller('dataController', function($scope) {
 		$scope.message = 'Welcome to the Data page.';
+	});
+
+	scotchApp.controller('weatherController', function($scope) {
+		$scope.message = 'Welcome to the Weather page.';
 	});
 
 	scotchApp.controller('contactController', function($scope) {

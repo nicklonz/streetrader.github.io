@@ -23,7 +23,8 @@
             <ul class="nav navbar-nav navbar-right">
                <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
                <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
-               <li><a href="#data"><i class="fa fa-shield"></i> Data</a></li>
+               <li><a href="#data"><i class="fa fa-book"></i> Data</a></li>
+               <li><a href="#weather"><i class="fa fa-umbrella"></i> Weather</a></li>
                <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
             </ul>
          </div>
@@ -31,6 +32,7 @@
       <div id="main">
          <!-- angular templating -->
          <!-- this is where content will be injected -->
+         <div ng-view></div>
          <div class="container">
             <div class="jumbotron text-center">
                <h3><a href="https://en.wikipedia.org/wiki/Pythagorean_expectation" target="blank">What is the Pythagorean Expectation?</a></h3>
@@ -75,14 +77,13 @@
                <input value="" ng-model="games_played" name="games" type="integer" id="games" placeholder="Games Played">
                <div><b>Total Wins:</b></div>
                <label for="wins"></label>
-               <input value="87" name="wins" ng-model="games_won"  type="integer" id="wins" placeholder="Wins">
+               <input value="" name="wins" ng-model="games_won"  type="integer" id="wins" placeholder="Wins">
                <div><b>Runs Scorded:</b></div>
                <label for="scorded"></label>
-               <input value="671" name="scorded" ng-model="runs_scored" type="integer" id="scorded" placeholder="Runs Scorded">
+               <input value="" name="scorded" ng-model="runs_scored" type="integer" id="scorded" placeholder="Runs Scorded">
                <div><b>Runs Against:</b></div>
                <label for="against"></label>
-               <input value="617" name="against" ng-model="runs_against" type="integer" id="against" placeholder="Runs Against">
-               <br><br>
+               <input value="" name="against" ng-model="runs_against" type="integer" id="against" placeholder="Runs Against">
                <br><br>
                <section id="results">
                   <p>The team selected is <span ng-model="team"></span>.</p>
@@ -92,6 +93,7 @@
          </div>
       </div>
       <footer class="text-center">
+       
       </footer>
    </body>
 </html>
