@@ -18,7 +18,7 @@
       <nav class="navbar navbar-default">
          <div class="container">
             <div class="navbar-header">
-               <a class="navbar-brand" href="/">{{games_played}} MLB Pythagorean Team Calculator</a>
+               <a class="navbar-brand" href="/"> MLB Pythagorean Team Calculator</a>
             </div>
             <ul class="nav navbar-nav navbar-right">
                <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
@@ -33,64 +33,7 @@
          <!-- angular templating -->
          <!-- this is where content will be injected -->
          <div ng-view></div>
-         <div class="container">
-            <div class="jumbotron text-center">
-               <h3><a href="https://en.wikipedia.org/wiki/Pythagorean_expectation" target="blank">What is the Pythagorean Expectation?</a></h3>
-
-               <div><b>Select Team:</b></div>
-               <select id="team" ng-model="team">
-                  <option>New York Mets</option>
-                  <option>Boston Red Sox</option>
-                  <option>Arizona Diamondbacks</option>
-                  <option>Atlanta Braves</option>
-                  <option>Baltimore Orioles</option>
-                  <option>Chicago Cubs</option>
-                  <option>Chicago White Sox</option>
-                  <option>Cincinnati Reds</option>
-                  <option>Cleveland Indians</option>
-                  <option>Colorado Rockies</option>
-                  <option>Detroit Tigers</option>
-                  <option>Florida Marlins</option>
-                  <option>Houston Astros</option>
-                  <option>Kansas City Royals</option>
-                  <option>Los Angeles Angels</option>
-                  <option>Los Angeles Dodgers</option>
-                  <option>Milwaukee Brewers</option>
-                  <option>Minnesota Twins</option>
-                  <option>New York Mets</option>
-                  <option>New York Yankees</option>
-                  <option>Oakland Athletics</option>
-                  <option>Philadelphia Phillies</option>
-                  <option>Pittsburgh Pirates</option>
-                  <option>San Diego Padres</option>
-                  <option>San Francisco Giants</option>
-                  <option>Seattle Mariners</option>
-                  <option>St. Louis Cardinals</option>
-                  <option>Tampa Bay Rays</option>
-                  <option>Texas Rangers</option>
-                  <option>Toronto Blue Jays</option>
-                  <option>Washington Nationals</option>
-               </select>
-               <br>
-               <div><b>Games Played:</b></div>
-               <label for="games"></label>
-               <input value="" ng-model="games_played" name="games" type="integer" id="games" placeholder="Games Played">
-               <div><b>Total Wins:</b></div>
-               <label for="wins"></label>
-               <input value="" name="wins" ng-model="games_won"  type="integer" id="wins" placeholder="Wins">
-               <div><b>Runs Scorded:</b></div>
-               <label for="scorded"></label>
-               <input value="" name="scorded" ng-model="runs_scored" type="integer" id="scorded" placeholder="Runs Scorded">
-               <div><b>Runs Against:</b></div>
-               <label for="against"></label>
-               <input value="" name="against" ng-model="runs_against" type="integer" id="against" placeholder="Runs Against">
-               <br><br>
-               <section id="results">
-                  <p>The team selected is <span ng-model="team"></span>.</p>
-                  <p>Games played is <span ng-model="games_played"></span></p>
-               </section>
-            </div>
-         </div>
+         
       </div>
       <footer class="text-center">
        
