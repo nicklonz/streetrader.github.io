@@ -48,10 +48,38 @@
 		4. bind the formula result
 		 */
 		$scope.data = {
-			games_played: 162
+			team: 'New York Mets',
+			games_played: 162,
+      games_won: 87,
+			runs_scored: 671,
+			runs_against: 617,
+			games_lost: '',
+			winPct: '',
+			scoredAvg: '',
+			allowedAvg: '',
+			scoredAllowedAvg: '',
+			runsSAdiff: '',
+			rasRatio: '',
+			rasExp: '',
+			pygNum: '',
+			pygExpec: '',
+			pygExpecDiff: '',
 		};
 
-		$scope.calculate = function(){};
+		$scope.doCalculation = function(){
+			$scope.data.games_lost = $scope.data.games_played - $scope.data.games_won;
+			$scope.data.winPct = ($scope.data.games_won / $scope.data.games_played).toFixed(3);
+			$scope.data.scoredAvg = ($scope.data.runs_scored / $scope.data.games_played).toFixed(2);
+			$scope.data.allowedAvg = ($scope.data.runs_against / $scope.data.games_played).toFixed(2);
+			$scope.data.runsSAdiff = $scope.data.runs_scored - $scope.data.runs_against;
+			$scope.data.scoredAllowedAvg = ($scope.data.scoredAvg - $scope.data.allowedAvg).toFixed(2);
+			$scope.data.rasRatio = ($scope.data.runs_against / $scope.data.runs_scored).toFixed(2);
+			$scope.data.rasExp = Math.pow($scope.data.rasRatio,1.83);
+			$scope.data.pygNum = 1 / (1 + $scope.data.rasExp);
+ 			$scope.data.pygExpec = ($scope.data.pygNum * $scope.data.games_played).toFixed(2);
+ 			$scope.data.pygExpecDiff = ($scope.data.pygExpec - $scope.data.games_won).toFixed(2);
+
+		};
 	});
 
 	scotchApp.controller('aboutController', function($scope) {
