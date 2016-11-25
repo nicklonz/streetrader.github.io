@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   background: url(../images/bg-sky.png);
   background-repeat: repeat !important;
@@ -78,3 +79,6 @@ ul.rel-results {
 .divider:before {
   content: "|";
 }
+=======
+/* YOUR CUSTOM STYLES */
+>>>>>>> 1c7e1f4e56f2868dd51a8444c3d4fb91401d0c2a
