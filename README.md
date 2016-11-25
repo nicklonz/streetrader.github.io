@@ -1,4 +1,4 @@
-fastr
+Open Movies
 ==
 
 A Quicker solution for browsing movies and TV shows!
