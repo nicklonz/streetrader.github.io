@@ -1,7 +1,6 @@
 
 	// create the module and name it mlbApp
 	var mlbApp = angular.module('mlbApp', ['ngRoute']);
-	var movieApp = angular.module('movieApp', []);
 
 	// configure our routes
 	mlbApp.config(function($routeProvider) {
@@ -23,12 +22,6 @@
 			.when('/data', {
 				templateUrl : 'pages/data.html',
 				controller  : 'dataController'
-			})
-
-			// route for the movie page
-			.when('/movies', {
-				templateUrl : 'pages/movies.html',
-				controller  : 'moviesController'
 			})
 
 			// route for the contact page
@@ -91,10 +84,6 @@
 		$scope.message = 'Welcome to the Data page.';
 	});
 
-	mlbApp.controller('moviesController', function($scope) {
-		$scope.message = 'Welcome to the Movies API page.';
-		 
-	});
 
 	mlbApp.controller('contactController', function($scope) {
 		$scope.message = 'Visit nicklonz.com to see more development work.';
