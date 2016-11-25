@@ -12,3 +12,5 @@ Article URL: http://www.sitepoint.com/api-calls-angularjs-http-service
 ### License ###
 
 [MIT License (MIT)](https://github.com/tanay1337/fastr/blob/master/LICENSE)
+
+==
