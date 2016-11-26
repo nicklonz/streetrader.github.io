@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MLB Pythagorean Team Calculator</title>
+		<link rel="icon" href="images/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rubik">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<center>
+					<div id="wrapper">
+  <hr>
+
+					<h2>MLB Pythagorean Team Calculator</h2>
+
+		<h2><a href="https://en.wikipedia.org/wiki/Pythagorean_expectation" target="blank">What does this site do?</a>
+		</h2>
+				<div><b>Select Team:</b></div>
+    <select id="team">
+          <option>Boston Red Sox</option>
+          <option>Arizona Diamondbacks</option>
+          <option>Atlanta Braves</option>
+          <option>Baltimore Orioles</option>
+          <option>Chicago Cubs</option>
+          <option>Chicago White Sox</option>
+          <option>Cincinnati Reds</option>
+          <option>Cleveland Indians</option>
+          <option>Colorado Rockies</option>
+          <option>Detroit Tigers</option>
+          <option>Florida Marlins</option>
+          <option>Houston Astros</option>
+          <option>Kansas City Royals</option>
+          <option>Los Angeles Angels</option>
+          <option>Los Angeles Dodgers</option>
+          <option>Milwaukee Brewers</option>
+          <option>Minnesota Twins</option>
+          <option>New York Mets</option>
+          <option>New York Yankees</option>
+          <option>Oakland Athletics</option>
+          <option>Philadelphia Phillies</option>
+          <option>Pittsburgh Pirates</option>
+          <option>San Diego Padres</option>
+          <option>San Francisco Giants</option>
+          <option>Seattle Mariners</option>
+          <option>St. Louis Cardinals</option>
+          <option>Tampa Bay Rays</option>
+          <option>Texas Rangers</option>
+          <option>Toronto Blue Jays</option>
+          <option>Washington Nationals</option>
+      </select>
+			<br>
+
+	<!--	
+  <div>
+    <form id="weather-form">
+      <h3>MLB Weather</h3>
+      <label for="city">City</label>
+      <input name="city" type="text" id="city" placeholder="City">
+      <label for="state">State</label>
+      <input name="state" type="text" id="state" placeholder="State">
+    </form>
+
+  <script id="weather-template" type="text/x-handlebars-template">
+    <p>City: {{city}}</p>
+    <p>Temperature: {{temp}}</p>
+    <p>Humidity: {{humidity}}</p>
+    <p>Wind Speed: {{windSpeed}}</p>
+  </script>
+  -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="handlebars.js"></script>
+    <script src="main.js" type="text/javascript" charset="utf-8" async defer></script>
+
+
+			<div><b>Games Played:</b></div>
+  <label for="games"></label>
+  <input value="162" name="games" type="integer" id="games" placeholder="Games Played">
+  
+  <div><b>Total Wins:</b></div>
+  <label for="wins"></label>
+  <input value="87" name="wins" type="integer" id="wins" placeholder="Wins">
+  
+  <div><b>Runs Scorded:</b></div>
+  <label for="scorded"></label>
+  <input value="671" name="scorded" type="integer" id="scorded" placeholder="Runs Scorded">
+  
+  <div><b>Runs Against:</b></div>
+  <label for="against"></label>
+  <input value="617" name="against" type="integer" id="against" placeholder="Runs Against">
+  <br>
+  <button id="btn">Calculate</button>
+
+  <p>The team in the <span id=name_team></span> has played <span id=games_played></span> </p>
+  <p>Games Played: .</p>
+  <p>Total Wins: <span id=total_wins>0</span>.</p>
+  <p>Total Runs Scored: <span id=runs_scored>0</span>.</p>
+  <p>Total Runs Against: <span id=runs_against>0</span>.</p>
+
+    
+ <!--    "They have won " +numberofWins + " and lost " + numberofLosses + " games for a win pct of " + winPct + "" 
+    
+    "They have scored " + runsScored + " runs and allowed " + runsAllowed + " for a differential of " + runsSAdiff + " total runs."
+    "They have scored on average " + scoredAvg + " runs while allowing " + allowedAvg + " for a differential of " + scoredAllowedAvg + " runs per game.
+    "Their PYG Expectation for wins is " + pygExpec + " games.")
+    "The PYG Expectation minus actual wins difference is " + pygExpecDiff + " games.")</p> -->
+				
+		</center>
+
+	<!-- 	<script src="js/jquery.min.js"></script> -->
+		<!-- <script src="js/handlebars.js"></script> -->
+		<script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	</body>
+</html>
+
