@@ -33,6 +33,7 @@
 
 	// create the controller and inject Angular's $scope
 	mlbApp.controller('mainController', function($scope) {
+		$scope.calculated = false;
 		// create a message to display in our view
 		$scope.message = 'Thank You for visiting!';
 		/*
@@ -61,6 +62,7 @@
 		};
 
 		$scope.doCalculation = function(){
+			$scope.calculated = true;
 			$scope.data.games_lost = $scope.data.games_played - $scope.data.games_won;
 			$scope.data.winPct = ($scope.data.games_won / $scope.data.games_played).toFixed(3);
 			$scope.data.scoredAvg = ($scope.data.runs_scored / $scope.data.games_played).toFixed(2);

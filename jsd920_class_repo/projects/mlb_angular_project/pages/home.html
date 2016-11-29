@@ -51,7 +51,7 @@
                <br><br>
                <button ng-click="doCalculation()">Calculate Expectation</button>
                <br><br>
-               <section id="results">
+               <section id="results" ng-show="calculated">
                <h4>
                   <p>The {{data.team}} record is {{data.games_won}} and {{data.games_lost}} for a winning percentage of {{data.winPct}}</p>
                   <p>The {{data.team}} have scored {{data.runs_scored}} runs and allowed {{data.runs_against}} for a differential of {{data.runsSAdiff}} total runs.<p>
